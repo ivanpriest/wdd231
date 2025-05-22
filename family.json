@@ -1,0 +1,15 @@
+{
+    "family-name":"Dekportor",
+    "number-of-members":4,
+    "visited":true,
+    "member":[
+        {"name":"Ivan",
+          "age":24},
+        {"name":"famous",
+          "age":22},
+        {"name":"Hillarious",
+          "age":33},
+        {"name":"Rolland",
+          "age":19}
+    ]
+}
