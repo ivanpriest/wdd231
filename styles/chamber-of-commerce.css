@@ -79,9 +79,8 @@ a:hover{
         grid-template-columns: 65% 1fr;
         grid-template-rows: 40px minmax(200px,auto) minmax(30px,auto);
     }
-   
     .page-name{
-        display:head;
+        grid-area:head;
     }
     .profile{
         grid-area: profile;
@@ -288,7 +287,7 @@ a:hover{
     }
    
     .page-name{
-        display:head;
+        grid-area:head;
     }
     .profile{
         grid-area: profile;
