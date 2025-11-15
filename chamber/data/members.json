@@ -1,0 +1,64 @@
+[
+    {
+       "name":"JC Tech Hub",
+       "addresses":"Freepipe, Abeka",
+       "phoneNumber":["+233 594 755 233"],
+       "websiteUrl":"https://jctechhub.org",
+       "image":"./images/jc-tech-hub.png",
+       "established":"2025"
+    },
+    {
+        "name":"MTN Ghana",
+       "addresses":"Accra, Ghana",
+       "phoneNumber":["+233 594 755 233"],
+       "websiteUrl":"https://mtn.com.gh",
+       "image":"./images/mtn-ghana.png",
+       "established":"2025"
+
+    },
+    {
+        "name":"JC Tech Hub",
+       "addresses":"Freepipe, Abeka",
+       "phoneNumber":["+233 594 755 233"],
+       "websiteUrl":"https://jctechhub.org",
+       "image":"./images/members/jc-tech-hub.png",
+       "established":"2025"
+
+    },
+    {
+        "name":"JC Tech Hub",
+       "addresses":"Freepipe, Abeka",
+       "phoneNumber":["+233 594 755 233"],
+       "websiteUrl":"https://jctechhub.org",
+       "image":"./images/members/jc-tech-hub.png",
+       "established":"2025"
+
+    },
+    {
+        "name":"JC Tech Hub",
+       "addresses":"Freepipe, Abeka",
+       "phoneNumber":["+233 594 755 233"],
+       "websiteUrl":"https://jctechhub.org",
+       "image":"./images/members/jc-tech-hub.png",
+       "established":"2025"
+
+    },
+    {
+        "name":"JC Tech Hub",
+       "addresses":"Freepipe, Abeka",
+       "phoneNumber":["+233 594 755 233"],
+       "websiteUrl":"https://jctechhub.org",
+       "image":"./images/members/jc-tech-hub.png",
+       "established":"2025"
+
+    },
+    {
+        "name":"JC Tech Hub",
+       "addresses":"Freepipe, Abeka",
+       "phoneNumber":["+233 594 755 233"],
+       "websiteUrl":"https://jctechhub.org",
+       "image":"./images/members/jc-tech-hub.png",
+       "established":"2025"
+
+    }
+]
