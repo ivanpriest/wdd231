@@ -12,22 +12,25 @@ body{
     background-color: var(--primary-color);
     margin:0;
 }
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
     font-family: var(--heading-font);
     padding:5px;
+    margin:5px;
 }
 p{
     font-family: var(--normal-font);
     padding:2px;
+    margin: 5px;
 }
 li{ 
-    font-family: var(--style-font);
-    
+    font-family: var(--style-font); 
+    list-style-type: none;
 }
 a{
     color:black;
     text-decoration: none;
 }
+@media screen and (min-width:676px){
 .header-container{
     background-color: var(--secondary-color);
     display:flex;
@@ -52,16 +55,38 @@ a{
     display: flex;
     align-items: center;
 }
+.name{
+    color:var(--primary-color);
+
+}
+.name p{
+    text-align: center;
+}
+nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container{
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 .nav{
     display:flex;
     justify-content: space-evenly;
-    align-items: center;
-    gap: 5px;
-    /* width:100%; */
+    gap: 15px;
 }
-.nav li{
-    list-style-type: none;
+a{
+    color: var(--primary-color);
 }
+
+a:hover{
+    background-color: var(--primary-color);
+    color:var(--tertiary-color);
+}
+
 main{
     min-height: 90vh;
     width: 100%;
@@ -95,6 +120,19 @@ main{
     box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
     
 }
+.weather{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(1fr,2fr));
+    grid-template-areas: "icon details";
+}
+.weather-icon{
+
+    grid-area: icon;
+}
+.weather-details{
+
+    grid-area: details;
+}
 
 .weather-forecast{
     grid-area: 1/3/2/4;
@@ -113,11 +151,10 @@ main{
 }
 .business-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     gap:20px;
     width:95%;
     margin:35px auto 35px auto;
-    /* box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2); */
     padding: 15px;
 
 }
@@ -125,17 +162,243 @@ main{
     box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
     min-height: 200px;
     background-color: bisque;
-    margin:10px;
+    margin:10px 3px;
+    border-radius: 3px;
+
+}
+.card-head{
+    text-align: center;
+}
+.business-info{
+    display:grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-areas:"image info";
+    gap:3px;
+    padding:5px;
+}
+.business-image{
+    grid-area: image;
+    width: 100%;
+
+}
+.business-image img{
+    width:100%;
+    height: auto;
+}
+.info{
+    grid-area: info;
+    width:100%;
+    padding:2px;
 
 }
 
 footer{
     display:flex;
     justify-content: space-evenly;
+    align-items: center;
     background-color: var(--secondary-color);
+    color: var(--primary-color);
 
 }
 .socials{
     display:flex;
     justify-content: space-around;
 }
+.social{
+    width:60px;
+    height: auto;
+}
+
+}
+
+ @media screen and (max-width:675px) {
+    .header-container{
+    background-color: var(--secondary-color);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.header_container, footer{
+    min-height:60px;
+}
+.company{
+    min-width: 350px;
+    display:flex;
+    justify-content: space-evenly;
+    margin-left:10px ;
+    gap:20px;
+}
+.name{
+    color: var(--primary-color);
+}
+.name p{
+    text-align: center;
+}
+.logo{
+    max-width: 200px;
+}
+.logo img{
+    min-width: 100px;
+    max-width: 150px;
+    height: auto;
+}
+.company{
+    display: flex;
+    align-items: center;
+}
+.nav-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+a{
+    color: var(--primary-color);
+}
+a:hover{
+    background-color: var(--primary-color);
+    color:var(--tertiary-color);
+}
+.hide{
+    display:none;
+}
+.hide.show{
+    display: block;
+}
+.ham::before{
+    content:"\2630";
+
+}
+.ham.close::before{
+     content: "\00D7";
+}
+.nav li{
+    list-style-type: none;
+}
+main{
+    min-height: 90vh;
+    width: 100%;
+}
+.hero-image{
+    background-color: beige;
+    min-height: 100px;
+    box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
+
+}
+.utility{
+    width:99%;
+    gap:8px;
+    margin:0 auto;
+}
+.events{
+    margin:15px auto;
+    width:80%;
+    background-color: aqua;
+    border-radius: 5px;
+    min-height:70px;
+    box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
+
+}
+.current-weather{
+    margin:15px auto;
+    width:80%;
+    background-color: aqua;
+    border-radius: 5px;
+    min-height:70px;
+    box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
+    
+}
+.weather{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(1fr,2fr));
+    grid-template-areas: "icon details";
+}
+.weather-icon{
+    grid-area: icon;
+
+}
+.weather-details{
+    grid-area: details;
+
+}
+
+.weather-forecast{
+    margin:15px auto;
+    width:80%;
+    background-color: aqua;
+    border-radius: 5px;
+    min-height:70px;
+    box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
+    
+}
+.current-weather h2,.events h2,.weather-forecast h2{
+    background-color: #343434;
+    color: var(--primary-color);
+    border-radius: 5px 5px 0 0;
+    min-height: 10px;
+    margin:0;
+}
+.business-cards{
+    width:95%;
+    margin:35px auto;
+    padding: 5px;
+
+}
+.card{
+    box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
+    min-height: 200px;
+    background-color: bisque;
+    margin:20px auto;
+    width:80%;
+    border-radius: 3px;
+
+}
+.business-info{
+    display:grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-areas:"image info";
+    gap:3px;
+    padding:5px;
+}
+.business-image{
+    grid-area: image;
+    width: 100%;
+
+}
+.business-image img{
+    width:100%;
+    height: auto;
+}
+.info{
+    grid-area: info;
+
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 25px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+}
+.socials{
+    display:flex;
+    justify-content: space-around;
+}
+.social{
+    width:60px;
+    height: auto;
+}
+    
+ }
