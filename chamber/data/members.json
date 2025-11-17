@@ -1,64 +1,65 @@
 [
-    {
-       "name":"JC Tech Hub",
-       "addresses":"Freepipe, Abeka",
-       "phoneNumber":["+233 594 755 233"],
-       "websiteUrl":"https://jctechhub.org",
-       "image":"./images/jc-tech-hub.png",
-       "established":"2025"
-    },
-    {
-        "name":"MTN Ghana",
-       "addresses":"Accra, Ghana",
-       "phoneNumber":["+233 594 755 233"],
-       "websiteUrl":"https://mtn.com.gh",
-       "image":"./images/mtn-ghana.png",
-       "established":"2025"
-
-    },
-    {
-        "name":"JC Tech Hub",
-       "addresses":"Freepipe, Abeka",
-       "phoneNumber":["+233 594 755 233"],
-       "websiteUrl":"https://jctechhub.org",
-       "image":"./images/members/jc-tech-hub.png",
-       "established":"2025"
-
-    },
-    {
-        "name":"JC Tech Hub",
-       "addresses":"Freepipe, Abeka",
-       "phoneNumber":["+233 594 755 233"],
-       "websiteUrl":"https://jctechhub.org",
-       "image":"./images/members/jc-tech-hub.png",
-       "established":"2025"
-
-    },
-    {
-        "name":"JC Tech Hub",
-       "addresses":"Freepipe, Abeka",
-       "phoneNumber":["+233 594 755 233"],
-       "websiteUrl":"https://jctechhub.org",
-       "image":"./images/members/jc-tech-hub.png",
-       "established":"2025"
-
-    },
-    {
-        "name":"JC Tech Hub",
-       "addresses":"Freepipe, Abeka",
-       "phoneNumber":["+233 594 755 233"],
-       "websiteUrl":"https://jctechhub.org",
-       "image":"./images/members/jc-tech-hub.png",
-       "established":"2025"
-
-    },
-    {
-        "name":"JC Tech Hub",
-       "addresses":"Freepipe, Abeka",
-       "phoneNumber":["+233 594 755 233"],
-       "websiteUrl":"https://jctechhub.org",
-       "image":"./images/members/jc-tech-hub.png",
-       "established":"2025"
-
-    }
+  {
+    "name": "Accra Tech Solutions",
+    "address": "12 Ring Road, Accra",
+    "phone": "+233 24 555 1010",
+    "website": "https://accratech.com",
+    "image": "https://picsum.photos/seed/accratech/200/200",
+    "membership": 3,
+    "about": "A leading IT consulting and software development company."
+  },
+  {
+    "name": "Gold Coast Finance",
+    "address": "45 Oxford Street, Osu",
+    "phone": "+233 20 888 2222",
+    "website": "https://goldcoastfinance.com",
+    "image": "https://picsum.photos/seed/goldcoast/200/200",
+    "membership": 2,
+    "about": "Financial services and investment advisory."
+  },
+  {
+    "name": "Kumasi Agro Supply",
+    "address": "19 Adum Market, Kumasi",
+    "phone": "+233 27 112 3344",
+    "website": "https://kumasiagro.com",
+    "image": "https://picsum.photos/seed/kumasiagro/200/200",
+    "membership": 1,
+    "about": "Supplier of farm tools, seeds, and equipment."
+  },
+  {
+    "name": "Volta Clean Energy",
+    "address": "7 Aflao Road, Ho",
+    "phone": "+233 55 901 6767",
+    "website": "https://voltacleanenergy.org",
+    "image": "https://picsum.photos/seed/voltaenergy/200/200",
+    "membership": 3,
+    "about": "Renewable energy solutions provider."
+  },
+  {
+    "name": "Cape Coast Clothing",
+    "address": "4 Kingsway, Cape Coast",
+    "phone": "+233 31 209 8080",
+    "website": "https://capeclothes.com",
+    "image": "https://picsum.photos/seed/capeclothes/200/200",
+    "membership": 1,
+    "about": "Fashion and textile company."
+  },
+  {
+    "name": "Tamale Fresh Foods",
+    "address": "10 Sagnarigu Road, Tamale",
+    "phone": "+233 25 991 4502",
+    "website": "https://tamalefoods.com",
+    "image": "https://picsum.photos/seed/tamalefresh/200/200",
+    "membership": 2,
+    "about": "Organic and processed food distributor."
+  },
+  {
+    "name": "Western Logistics Hub",
+    "address": "88 Harbour Road, Takoradi",
+    "phone": "+233 59 330 9000",
+    "website": "https://westernlogistics.com",
+    "image": "https://picsum.photos/seed/westernhub/200/200",
+    "membership": 3,
+    "about": "Supply chain and transport logistics company."
+  }
 ]
