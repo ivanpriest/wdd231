@@ -86,11 +86,11 @@ grid.addEventListener("click", async()=>{
             const h4=document.createElement("h4");
             h4.innerHTML=`${company.name}`;
             const para1=document.createElement("p");
-            para1.innerHTML=`<b>Address: </b>${company.address}`;
+            para1.innerHTML=`<b>address: </b>${company.address}`;
             const para2=document.createElement("p");
-            para2.innerHTML=`<b>Phone: </b>${company.phone}`;
+            para2.innerHTML=`<b>phone: </b>${company.phone}`;
             const para3=document.createElement("p");
-            para3.innerHTML=`<b>URL: </b><a href="${company.website}">${company.website}</a>`;
+            para3.innerHTML=`<b>url: </b><a href="${company.website}">${company.website}</a>`;
             const businessinfo=document.createElement("div");
             businessinfo.classList.add("business-info");
             const businessimage= document.createElement("div");
