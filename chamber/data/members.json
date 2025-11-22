@@ -5,7 +5,7 @@
     "phone": "+233 24 555 1010",
     "website": "https://accratech.com",
     "image": "https://picsum.photos/seed/accratech/200/200",
-    "membership": 3,
+    "membership": "Gold",
     "about": "A leading IT consulting and software development company."
   },
   {
@@ -14,7 +14,7 @@
     "phone": "+233 20 888 2222",
     "website": "https://goldcoastfinance.com",
     "image": "https://picsum.photos/seed/goldcoast/200/200",
-    "membership": 2,
+    "membership": "Silver",
     "about": "Financial services and investment advisory."
   },
   {
@@ -23,7 +23,7 @@
     "phone": "+233 27 112 3344",
     "website": "https://kumasiagro.com",
     "image": "https://picsum.photos/seed/kumasiagro/200/200",
-    "membership": 1,
+    "membership": "Gold",
     "about": "Supplier of farm tools, seeds, and equipment."
   },
   {
@@ -32,7 +32,7 @@
     "phone": "+233 55 901 6767",
     "website": "https://voltacleanenergy.org",
     "image": "https://picsum.photos/seed/voltaenergy/200/200",
-    "membership": 3,
+    "membership": "Diamond",
     "about": "Renewable energy solutions provider."
   },
   {
@@ -41,7 +41,7 @@
     "phone": "+233 31 209 8080",
     "website": "https://capeclothes.com",
     "image": "https://picsum.photos/seed/capeclothes/200/200",
-    "membership": 1,
+    "membership": "Diamond",
     "about": "Fashion and textile company."
   },
   {
@@ -50,7 +50,7 @@
     "phone": "+233 25 991 4502",
     "website": "https://tamalefoods.com",
     "image": "https://picsum.photos/seed/tamalefresh/200/200",
-    "membership": 2,
+    "membership": "Gold",
     "about": "Organic and processed food distributor."
   },
   {
@@ -59,7 +59,7 @@
     "phone": "+233 59 330 9000",
     "website": "https://westernlogistics.com",
     "image": "https://picsum.photos/seed/westernhub/200/200",
-    "membership": 3,
+    "membership": "Silver",
     "about": "Supply chain and transport logistics company."
   }
 ]

@@ -108,6 +108,24 @@ main{
     box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
 
 }
+#call-to-action{
+    width:100%;
+    text-align: center;
+    margin:20px auto;
+}
+#call-to-action a{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding:10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius:5px;
+}
+#call-to-action a:hover{
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    box-shadow: 5px 5px 10px 5px rgba(52,52,52,0.2);
+}
 .utility{
     width:99%;
     display: grid;
@@ -346,6 +364,24 @@ main{
     box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
 
 }
+#call-to-action{
+    width:100%;
+    text-align: center;
+    margin:20px auto;
+}
+#call-to-action a{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding:10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius:5px;
+}
+#call-to-action a:hover{
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    box-shadow: 5px 5px 10px 5px rgba(52,52,52,0.2);
+}
 .utility{
     width:99%;
     gap:8px;
@@ -372,10 +408,12 @@ main{
 .weather{
     display:grid;
     grid-template-columns:repeat(2,minmax(1fr,2fr));
-    grid-template-areas: "icon details";
+    grid-template-areas: "icons details";
 }
 .weather-icon{
-    grid-area: icon;
+    grid-area: icons;
+    width: 60%;
+    height: auto;
 
 }
 .weather-details{
@@ -391,6 +429,9 @@ main{
     min-height:70px;
     box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
     
+}
+.forecast p{
+    margin: 5px auto;
 }
 .current-weather h2,.events h2,.weather-forecast h2{
     background-color: #343434;
