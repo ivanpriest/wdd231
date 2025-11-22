@@ -171,6 +171,18 @@ main{
     box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
     
 }
+.forecast-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.forecast-day{
+    width: 75%;
+    margin: 0 auto;
+    min-height: 50px;
+    text-align: center;
+}
 .current-weather h2,.events h2,.weather-forecast h2{
     background-color: #343434;
     color: var(--primary-color);
@@ -430,8 +442,15 @@ main{
     box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
     
 }
-.forecast p{
-    margin: 5px auto;
+.forecast-container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.forecast-day{
+    width: 75%;
+    margin: 0 auto;
+    max-height: 150px;
 }
 .current-weather h2,.events h2,.weather-forecast h2{
     background-color: #343434;
