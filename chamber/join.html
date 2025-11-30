@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="./styles/join.css">
         <link rel="stylesheet" href="./styles/directory.css">
         <link rel="" href="">
-        <script src="./scripts/directory.js" defer></script>
+        <script src="./scripts/join.js" defer></script>
     </head>
     <body>
         <header class="header-container">
@@ -41,16 +41,18 @@
         <main>
             <section class="hero-image"></section>
             <h1>Join</h1>
+            <hr>
             <section id="main-content">
                 <aside id="form-container">
                     <form id="form" action="thankyou.html" method="get">
                         <h2>Membership application form</h2>
+                        <hr>
                         <label for="firstname">
-                            <p>Firstname:</p>
+                            <p>Firstname:<span>*</span></p>
                             <input type="text" id="firstname" name="firstname" title="Enter your firstname" autocomplete="given-name" required placeholder="Enter your firstname here">
                         </label>
                         <label for="lastname">
-                            <p>Lastname:</p>
+                            <p>Lastname:<span>*</span></p>
                             <input type="text" id="lastname" name="lastname" title="Enter your lastname" autocomplete="family-name" required placeholder="Enter your lastname here">
                         </label>
                         <label for="org-title">
@@ -58,15 +60,15 @@
                             <input type="text" id="org-title" name="organization-title" title="Enter your organisational title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
                         </label>
                         <label for="email">
-                            <p>Email:</p>
+                            <p>Email:<span>*</span></p>
                             <input type="email" id="email" name="email" title="Enter your Email" autocomplete="email" required placeholder="example@example.com">
                         </label>
                         <label for="phone">
-                            <p>Phone:</p>
+                            <p>Phone:<span>*</span></p>
                             <input type="tel" id="phone" name="phone" title="Enter your phone" autocomplete="tel" required>
                         </label>
                         <label for="org-name">
-                            <p>Organisation name:</p>
+                            <p>Organisation name:<span>*</span></p>
                             <input type="text" id="org-name" name="org-name" title="Enter your organisation name" autocomplete="organization" required>
                         </label>
                         <label for="membership-level">
@@ -81,7 +83,7 @@
                         </label>
                         <label for="organisation-description">
                             <p>Description:</p>
-                            <textarea id="organisation-description" title="Enter your organisation's descriptions" name="organisation-description" row="5" cols="35" placeholder="Write a little about your organisation"></textarea>
+                            <textarea id="organisation-description" title="Enter your organisation's descriptions" name="organisation-description" row="20" cols="35" placeholder="Write a little about your organisation"></textarea>
                         </label>
                         <input type="hidden" id="time-stamp" name="timestamp">
                         <button type="submit">Apply for membership</button>
@@ -90,20 +92,57 @@
                 <aside class="card-container">
                     <div class="membership-level">
                         <h3>Non-profit membership level</h3>
-                        <a href="#">learn more</a>
+                        <a class="np" href="#">learn more</a>
                     </div>
+                    <dialog class="np-modal">
+                        <h4>NP Membership Benefits</h4>
+                        <ul>
+                            <li>Free Membership Benefits</li>
+                            <li>Access to community events</li>
+                            <li>Basic training programs</li>
+                        </ul>
+                        <button class="npclose-btn">close</button>
+                    </dialog>
                     <div class="membership-level">
                         <h3>Bronze membership level</h3>
-                        <a href="#">learn more</a>
+                        <a class="bronze" href="#">learn more</a>
                     </div>
+                    <dialog class="bronze-modal">
+                        <h4>Bronze Membership Benefits</h4>
+                        <ul>
+                            <li>Discounted training sessions</li>
+                            <li>Invitation to business mixers</li>
+                            <li>Basic advertising in newletters</li>
+                        </ul>
+                        <button class="bronzeclose-btn">close</button>
+                    </dialog >
                     <div class="membership-level">
                         <h3>Silver membership level</h3>
-                        <a href="#">learn more</a>
+                        <a class="silver" href="#">learn more</a>
                     </div>
+                    <dialog class="silver-modal">
+                        <h4>Silver Membership Benefits</h4>
+                        <ul>
+                            <li>Spotlight ad on homepage (1x/month)</li>
+                            <li>20% discount on chamber events</li>
+                            <li>Premium networking opportunities</li>
+                        </ul>
+                        <button class="silverclose-btn">close</button>
+                    </dialog>
                     <div class="membership-level">
                         <h3>Gold membership level</h3>
-                        <a href="#">learn more</a>
+                        <a class="gold" href="#">learn more</a>
                     </div>
+                    <dialog class="gold-modal">
+                        <h4>Gold Membership Benefits</h4>
+                        <ul>
+                            <li>Homepage spolight (4x/month)</li>
+                            <li>Free access to all training</li>
+                            <li>Exclusive leadership events</li>
+                            <li>Priority Advertising placement</li>
+                        </ul>
+                        <button class="goldclose-btn">close</button>
+                    </dialog>
                 </aside> 
             </section>       
         </main>
