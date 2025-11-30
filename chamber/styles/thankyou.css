@@ -115,7 +115,9 @@ main{
     box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
     border-radius: 5px;
 }
-
+.application-info p{
+    color: var(--tertiary-color);
+}
 footer{
     display:flex;
     flex-direction: row;
