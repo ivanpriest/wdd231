@@ -46,7 +46,7 @@
                 <aside id="form-container">
                     <form id="form" action="thankyou.html" method="get">
                         <h2>Membership application form</h2>
-                        <hr>
+                        
                         <label for="firstname">
                             <p>Firstname:<span>*</span></p>
                             <input type="text" id="firstname" name="firstname" title="Enter your firstname" autocomplete="given-name" required placeholder="Enter your firstname here">
@@ -75,10 +75,10 @@
                             <p>membership-level:</p>
                             <select id="membership-level">
                                 <option value="">--Select--</option>
-                                <option value="np"></option>
-                                <option value="bronze"></option>
-                                <option value="silver"></option>
-                                <option value="gold"></option>
+                                <option value="np">Np membership</option>
+                                <option value="bronze">Bronze membership</option>
+                                <option value="silver">Silver membership</option>
+                                <option value="gold">Gold membership</option>
                             </select>
                         </label>
                         <label for="organisation-description">
@@ -90,6 +90,8 @@
                    </form>   
                 </aside>
                 <aside class="card-container">
+                    <h2>Membership levels</h2>
+                    
                     <div class="membership-level">
                         <h3>Non-profit membership level</h3>
                         <a class="np" href="#">learn more</a>

@@ -108,112 +108,12 @@ main{
     box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
 
 }
-#main-content{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-
-    
-}
-#form-container{
-    width: 100%;
-    grid-column: 1/2;
-    margin: 0 auto;
-    
-}
-#form{
-width: 70%;
-margin:3em auto;
-
-}
-label{
-    display:block;
-    margin-top: 2em;
-}
-label p{
-    font-weight: bold;
-}
-#form button{
-    width:60%;
-    height: 35px;
-    background-color: var(--tertiary-color);
-    color:var(--primary-color);
-    display:block;
-    margin-top: 1em;
-    
-}
-input,select{
-    display: block;
-    width:250px;
-    height: 20px;
-}
-textarea{
-    display: block;
-    
-}
-span{
-    color:red;
-}
-.card-container{
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-}
-
-
-.membership-level{
-    width:90%;
-    height:85px;
-    margin:1em auto;
-    border-radius:5px;
-    background-color: var(--secondary-color);
-    box-shadow:0 0 15px 5px rgba(52,52,52,0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    animation-name: fadein ; 
-    animation-duration:1.5s;
-    animation-timing-function: ease-in ; 
-}
-.membership-level h3{
-    text-align: center;
-    color: var(--primary-color)
-
-}
-.membership-level a{
-    display:block;
-    width: 50%;
-    margin:5px auto;
+.application-info{
+    width :70%;
+    min-height: 100px;
+    margin:0 auto;
+    box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
     border-radius: 5px;
-    border:0.5px solid var(--tertiary-color);
-    background-color: var(--primary-color);
-    color:var(--tertiary-color);
-    text-align:center;
-}
-
-dialog {
-  padding: 2rem;
-  border: none;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 400px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-dialog::backdrop {
-  background: rgba(0,0,0,0.5);
-}
-
-.close-btn {
-  margin-top: 1rem;
-  padding: .5rem 1rem;
-  background: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 footer{
@@ -233,22 +133,7 @@ footer{
     width:60px;
     height: auto;
 }
-@keyframes fadein{
-    0%{
-        transform:translateY(50px);
-        opacity:0;
-    }
-    50%{
-        transform:translateY(25px);
-        opacity:0.5;
 
-    }
-    100%{
-        transform:translateY(0);
-        opacity:1;
-
-    }
-}
 
 }
 
@@ -337,101 +222,12 @@ main{
     box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
 
 }
-#main-content{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    gap: 1em;
-
-}
-#form-container{
-    width: 70%;
-    margin: 0 auto;
-}
-#form{
-width: 90%;
-margin:1em auto;
-min-width: 200px;
-
-}
-label{
-    display:block;
-    margin-top: 1em;
-}
-label p{
-    font-weight:bold;
-}
-#form button{
-    width:60%;
-    height: 35px;
-    background-color: var(--tertiary-color);
-    color:var(--primary-color);
-    display:block;
-    margin-top: 1em;
-
-}
-input,select,textarea{
-    display: block;
-
-}
-span{
-    color:red;
-}
-
-.membership-level{
-    width:60%;
-    min-height:45px;
-    margin:2em auto;
-    border-radius:5px;
-    background-color: var(--secondary-color);
-    box-shadow:0 0 15px 5px rgba(52,52,52,0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap :5px;
-    animation-name: fadein ; 
-    animation-duration:1.5s;
-    animation-timing-function: ease-in ; 
-}
-
-.membership-level h3{
-    text-align: center;
-    color: var(--primary-color)
-
-}
-.membership-level a{
-    display:block;
-    width: 50%;
-    margin:5px auto;
+.application-info{
+    width :70%;
+    min-height: 100px;
+    margin:0 auto;
+    box-shadow: 10px 10px 15px 10px rgba(52,52,52,0.2);
     border-radius: 5px;
-    border:0.5px solid var(--tertiary-color);
-    background-color: var(--primary-color);
-    color:var(--tertiary-color);
-    text-align:center;
-}
-dialog {
-  padding: 2rem;
-  border: none;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-dialog::backdrop {
-  background: rgba(0,0,0,0.5);
-}
-
-.close-btn {
-  margin-top: 1rem;
-  padding: .5rem 1rem;
-  background: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 footer{
@@ -451,22 +247,6 @@ footer{
 .social{
     width:60px;
     height: auto;
-}
-@keyframes fadein{
-    0%{
-        transform:translateY(50px);
-        opacity:0;
-    }
-    50%{
-        transform:translateY(25px);
-        opacity:0.5;
-
-    }
-    100%{
-        transform:translateY(0);
-        opacity:1;
-
-    }
     
  }
 }
