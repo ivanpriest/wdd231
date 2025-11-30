@@ -12,7 +12,7 @@ const ham=document.querySelector(".ham");
     copyright.innerHTML=`&copy;${date.getFullYear()} Tesano Chamber Of Commerce`;
     
 
-
+    
     const applicationinfo=new URLSearchParams(window.location.search);
     const firstname=applicationinfo.get("firstname");
     const para1=document.createElement("p");
@@ -29,8 +29,6 @@ const ham=document.querySelector(".ham");
     para4.innerHTML=`Organisation: ${businessname}`;
     const h2=document.createElement("h2");
     h2.innerHTML=`Thank you for the application below are the datails`
-    const time=document.querySelector("#time-stamp");
-    time.setAttribute("value",date.toLocaleDateString());
     const applinfo=document.querySelector(".application-info");
     applinfo.append(h2);
     applinfo.append(para1);

@@ -26,6 +26,9 @@ const ham=document.querySelector(".ham");
     const silverclosebtn=document.querySelector(".silverclose-btn");
     const goldclosebtn=document.querySelector(".goldclose-btn");
 
+    const time=document.querySelector("#time-stamp");
+    time.setAttribute("value",date.toLocaleDateString());
+
 
     np.addEventListener("click",()=>{
         npmodal.showModal();
