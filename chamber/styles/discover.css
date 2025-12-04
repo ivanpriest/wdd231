@@ -1,0 +1,240 @@
+/* Discover Page Specific Styles */
+.discover-hero {
+    background-image: url('../images/tesano-aerial-view.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    position: relative;
+}
+
+.discover-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.visit-message {
+    background-color: rgba(52, 52, 52, 0.85);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 80%;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Demographics Section */
+.demographics {
+    padding: 3rem 2rem;
+    background-color: #f8f8f8;
+}
+
+.demographics h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--tertiary-color);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--tertiary-color);
+}
+
+/* Gallery Styles */
+.gallery-container {
+    padding: 3rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--tertiary-color);
+}
+
+.attractions-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Small screens (320px - 640px) */
+@media screen and (max-width: 640px) {
+    .attractions-grid {
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+        grid-template-columns: 1fr;
+    }
+    
+    .discover-hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Medium screens (641px - 1024px) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .attractions-grid {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .attractions-grid {
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 .";
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Card Styles */
+.attraction-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.attraction-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.attraction-card:nth-child(1) { grid-area: card1; }
+.attraction-card:nth-child(2) { grid-area: card2; }
+.attraction-card:nth-child(3) { grid-area: card3; }
+.attraction-card:nth-child(4) { grid-area: card4; }
+.attraction-card:nth-child(5) { grid-area: card5; }
+.attraction-card:nth-child(6) { grid-area: card6; }
+.attraction-card:nth-child(7) { grid-area: card7; }
+.attraction-card:nth-child(8) { grid-area: card8; }
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Hover effect for medium and large screens only */
+@media screen and (min-width: 641px) {
+    .attraction-card:hover .card-image img {
+        transform: scale(1.1);
+        filter: brightness(1.1) contrast(1.1);
+    }
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--tertiary-color);
+}
+
+.card-content address {
+    font-style: normal;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.card-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.learn-more-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--normal-font);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--tertiary-color);
+}
+
+/* Active link styling */
+.nav .active {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+}

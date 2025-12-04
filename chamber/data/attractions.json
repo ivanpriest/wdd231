@@ -1,0 +1,66 @@
+ [
+    {
+        "id": 1,
+        "name": "Tesano Roundabout Market",
+        "address": "Tesano Roundabout, Accra",
+        "description": "A vibrant local market offering fresh produce, textiles, and traditional crafts. Open daily from 6am to 8pm.",
+        "image": "tesano-market.webp",
+        "category": "Shopping"
+    },
+    {
+        "id": 2,
+        "name": "Achimota Forest Reserve",
+        "address": "Achimota Forest, Near Tesano",
+        "description": "One of the last remaining urban forests in Accra, perfect for nature walks and bird watching.",
+        "image": "achimota-forest.webp",
+        "category": "Nature"
+    },
+    {
+        "id": 3,
+        "name": "Tesano Business Hub",
+        "address": "Liberia Road, Tesano",
+        "description": "Modern office complex housing various businesses and startups in the Tesano area.",
+        "image": "business-hub.webp",
+        "category": "Business"
+    },
+    {
+        "id": 4,
+        "name": "Kaneshie Market",
+        "address": "Kaneshie, Adjacent to Tesano",
+        "description": "One of Accra's largest markets, famous for its variety of goods and bustling atmosphere.",
+        "image": "kaneshie-market.webp",
+        "category": "Shopping"
+    },
+    {
+        "id": 5,
+        "name": "Tesano Sports Complex",
+        "address": "Sports Stadium Road, Tesano",
+        "description": "Community sports facility with football fields, basketball courts, and fitness areas.",
+        "image": "sports-complex.webp",
+        "category": "Recreation"
+    },
+    {
+        "id": 6,
+        "name": "Mount Zion Restaurant",
+        "address": "Ring Road Central, Tesano",
+        "description": "Popular local eatery serving authentic Ghanaian dishes in a family-friendly environment.",
+        "image": "mount-zion-restaurant.webp",
+        "category": "Dining"
+    },
+    {
+        "id": 7,
+        "name": "Tesano Community Library",
+        "address": "Community Center, Tesano",
+        "description": "Public library offering books, internet access, and educational programs for all ages.",
+        "image": "community-library.webp",
+        "category": "Education"
+    },
+    {
+        "id": 8,
+        "name": "Calvary Baptist Church",
+        "address": "Baptist Church Street, Tesano",
+        "description": "Historic church building dating back to 1935, known for its beautiful architecture.",
+        "image": "calvary-church.webp",
+        "category": "Culture"
+    }
+]

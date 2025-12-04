@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ivan Dekportor">
+        <meta name="description" content="Discover Tesano, Accra - Explore local attractions, businesses, and cultural sites in the Tesano area.">
+        <title>Tesano Chamber of Commerce - Discover</title>
+        <meta property="og:title" content="Discover Tesano, Accra">
+        <meta property="og:description" content="Explore attractions and businesses in Tesano, Accra, Ghana">
+        <meta property="og:image" content="https://www.gettyimages.com/detail/photo/chamber-of-commerce-sign-on-building-royalty-free-image/171383180?adppopup=true">
+        <meta property="og:url" content="https://tesanocommercechamber.com/discover">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/discover.css">
+        <script src="./scripts/discover.js" type="module" defer></script>
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="company">
+                <div class="logo"><img src="../images/chamber-of-commerce-logo.png" alt="Tesano Chamber of Commerce logo"></div>
+                <div class="name"><p>Tesano Chamber Of Commerce</p></div>
+            </div>
+            <nav>
+                <div class="ham">
+                    <div class="nav-container">
+                        <ul class="nav hide">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="directory.html">Directory</a></li>
+                            <li><a href="discover.html" class="active">Discover</a></li>
+                            <li><a href="join.html">Join</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="hero-image discover-hero">
+                <h1>Discover Tesano</h1>
+                <div id="visit-message" class="visit-message"></div>
+            </div>
+            
+            <section class="demographics">
+                <h2>Tesano at a Glance</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Population</h3>
+                        <p>85,000+</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Founded</h3>
+                        <p>1920s</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Elevation</h3>
+                        <p>75m above sea level</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Businesses</h3>
+                        <p>1,200+</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="gallery-container">
+                <h2>Local Attractions & Businesses</h2>
+                <div id="attractions-grid" class="attractions-grid">
+                    <!-- Cards will be dynamically generated from JSON -->
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <section class="company-info">
+                <h5>Tesano Chamber Of Commerce</h5>
+                <p>Adama crescent, Tesano</p>
+                <p>info@tesanocommercechamber.org</p>
+                <p>(+233) 542-432-674</p>
+            </section>
+            <section class="socials">
+                <div class="social"><a href="#"><img src="../images/github.svg" alt="GitHub link"></a></div>
+                <div class="social"><a href="#"><img src="../images/linkedin-brands-solid-full.svg" alt="LinkedIn link"></a></div>
+                <div class="social"><a href="#"><img src="../images/indeed.svg" alt="Indeed link"></a></div>
+            </section>
+            <section class="project-info">
+                <p>WDD231 Class Project</p>
+                <p>Ivan Dekportor</p>
+                <p id="copyright"></p>
+                <p id="last-modified"></p>
+            </section>
+        </footer>
+    </body>
+</html>
