@@ -3,12 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ivan Dekportor">
-    <link rel="stylesheet" href="">
-    <title>Document</title>
+    <title>Site Plan - Bayside Book Haven</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #F7FFF7;
+            --secondary-color: #5F5F58;
+            --tertiary-color: #343434;
+            --heading-font: "Noto Serif", serif;
+            --normal-font: "Barlow", sans-serif;
+            --style-font: "Dancing Script", cursive;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--normal-font);
+            background-color: var(--primary-color);
+            color: var(--tertiary-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 30px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--heading-font);
+            color: var(--tertiary-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .color-swatch {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .primary-color { background-color: var(--primary-color); color: var(--tertiary-color); }
+        .secondary-color { background-color: var(--secondary-color); }
+        .tertiary-color { background-color: var(--tertiary-color); }
+
+        .font-example {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .heading-font { font-family: var(--heading-font); }
+        .normal-font { font-family: var(--normal-font); }
+        .style-font { font-family: var(--style-font); }
+
+        .wireframe {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+        }
+
+        .wireframe-box {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            border: 2px dashed var(--secondary-color);
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .wireframe-header {
+            height: 60px;
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .wireframe-nav {
+            height: 40px;
+            background-color: var(--tertiary-color);
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .wireframe-content {
+            height: 300px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .wireframe-sidebar {
+            flex: 1;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .wireframe-main {
+            flex: 3;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+
+        .wireframe-footer {
+            height: 40px;
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .wireframe-content {
+                flex-direction: column;
+            }
+            
+            .wireframe-box {
+                min-width: 100%;
+            }
+        }
+
+        .styled-text {
+            font-family: var(--style-font);
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid var(--secondary-color);
+            font-family: var(--normal-font);
+            color: var(--secondary-color);
+        }
+    </style>
 </head>
 <body>
-    <h1>Website Title: Ghbusinesssescom</h1>   
-    <p>This is site is supposed to be a hub to all the local businesses owned by the citizens of Ghana</p>
+    <div class="container">
+        <header>
+            <h1>Website Site Plan</h1>
+            <p class="styled-text">Bayside Book Haven - Your Literary Sanctuary</p>
+        </header>
+
+        <!-- 1. Site Name -->
+        <section class="section">
+            <h2>1. Site Name</h2>
+            <h3>Bayside Book Haven</h3>
+            <p><strong>Reason for selection:</strong> This name was chosen because it evokes a sense of peace and community ("Haven"), location relevance ("Bayside"), and clearly indicates the site's focus on books and literature. It suggests a welcoming space for book lovers to gather, discover, and share their passion for reading.</p>
+            <p><em>Optional domain availability:</em> baysidebookhaven.com</p>
+        </section>
+
+        <!-- 2. Site Purpose -->
+        <section class="section">
+            <h2>2. Site Purpose</h2>
+            <p>The Bayside Book Haven website serves as a digital community center for local book enthusiasts. It will provide:</p>
+            <ul>
+                <li>Weekly book recommendations and reviews from community members</li>
+                <li>Calendar of local book club meetings and literary events</li>
+                <li>Platform for members to share their own book reviews and ratings</li>
+                <li>Directory of local independent bookstores and libraries</li>
+                <li>Online forum for book discussions and literary conversations</li>
+                <li>Monthly featured author highlights and interviews</li>
+            </ul>
+        </section>
+
+        <!-- 3. Scenarios -->
+        <section class="section">
+            <h2>3. Scenarios</h2>
+            <p>These questions represent what target audience members might ask when visiting the site:</p>
+            
+            <div class="scenario">
+                <h3>Scenario 1: New Resident</h3>
+                <p><strong>"I just moved to the area and love reading. Where can I find local book clubs to join and meet fellow readers?"</strong></p>
+                <p>This visitor needs clear navigation to the events calendar and book club directory, with filtering options by genre, meeting frequency, and location.</p>
+            </div>
+            
+            <div class="scenario">
+                <h3>Scenario 2: Avid Reader</h3>
+                <p><strong>"I just finished a great historical fiction novel and want to find similar recommendations. Can I also share my review with others?"</strong></p>
+                <p>This user needs access to the recommendation engine, search by genre features, and an easy way to submit their own reviews to the community.</p>
+            </div>
+            
+            <div class="scenario">
+                <h3>Scenario 3: Local Bookstore Owner</h3>
+                <p><strong>"How can I promote my store's upcoming author signing event to the local reading community?"</strong></p>
+                <p>This user needs clear information about submitting events, contact forms for business owners, and visibility of similar successful events.</p>
+            </div>
+        </section>
+
+        <!-- 4. Color Schema -->
+        <section class="section">
+            <h2>4. Color Schema</h2>
+            <p>The following color palette creates a calm, readable environment suitable for a literary website:</p>
+            
+            <div class="color-swatch primary-color">
+                Primary<br>#F7FFF7
+            </div>
+            <p><strong>Usage:</strong> Main background color throughout the site. Provides clean, easy reading experience.</p>
+            
+            <div class="color-swatch secondary-color">
+                Secondary<br>#5F5F58
+            </div>
+            <p><strong>Usage:</strong> Headers, footers, navigation bars, and section dividers. Also used for some buttons and accents.</p>
+            
+            <div class="color-swatch tertiary-color">
+                Tertiary<br>#343434
+            </div>
+            <p><strong>Usage:</strong> Primary text color, headings, and important interactive elements.</p>
+            
+            <p><em>This document exclusively uses the selected color scheme as demonstrated above.</em></p>
+        </section>
+
+        <!-- 5. Typography -->
+        <section class="section">
+            <h2>5. Typography</h2>
+            <p>Three fonts have been selected to create hierarchy and visual interest:</p>
+            
+            <div class="font-example heading-font">
+                <h3>Noto Serif</h3>
+                <p><strong>Usage:</strong> All headings (H1, H2, H3, H4), section titles, and important labels.</p>
+                <p>Example: "Welcome to Bayside Book Haven"</p>
+            </div>
+            
+            <div class="font-example normal-font">
+                <h3>Barlow</h3>
+                <p><strong>Usage:</strong> Body text, paragraphs, lists, navigation items, and form inputs.</p>
+                <p>Example: This is how regular paragraph text will appear throughout the website for optimal readability.</p>
+            </div>
+            
+            <div class="font-example style-font">
+                <h3>Dancing Script</h3>
+                <p><strong>Usage:</strong> Decorative elements, quotes, special highlights, and the site tagline.</p>
+                <p>Example: "Where every book finds its reader"</p>
+            </div>
+            
+            <p><em>This document demonstrates the actual use of these fonts as specified above.</em></p>
+        </section>
+
+        <!-- 6. Wireframe -->
+        <section class="section">
+            <h2>6. Wireframe</h2>
+            <p>Basic layout structure for the home page:</p>
+            
+            <div class="wireframe">
+                <!-- Mobile View -->
+                <div class="wireframe-box">
+                    <h3>Mobile View</h3>
+                    <div class="wireframe-header"></div>
+                    <div class="wireframe-nav"></div>
+                    <div class="wireframe-content">
+                        <div class="wireframe-main"></div>
+                    </div>
+                    <div class="wireframe-footer"></div>
+                    <p style="text-align: center; margin-top: 10px;">Single column layout with stacked elements</p>
+                </div>
+                
+                <!-- Desktop View -->
+                <div class="wireframe-box">
+                    <h3>Desktop/Tablet View</h3>
+                    <div class="wireframe-header"></div>
+                    <div class="wireframe-nav"></div>
+                    <div class="wireframe-content">
+                        <div class="wireframe-sidebar"></div>
+                        <div class="wireframe-main"></div>
+                    </div>
+                    <div class="wireframe-footer"></div>
+                    <p style="text-align: center; margin-top: 10px;">Two-column layout with sidebar navigation</p>
+                </div>
+            </div>
+            
+            <p><strong>Layout Explanation:</strong> The mobile view uses a single column for optimal small-screen viewing, while the desktop view includes a sidebar for additional navigation and featured content alongside the main content area.</p>
+        </section>
+
+        <footer>
+            <p>Site Plan Document for Bayside Book Haven | Created using specified color scheme and typography</p>
+            <p class="styled-text">Where every book finds its reader</p>
+        </footer>
+    </div>
 </body>
 </html>
