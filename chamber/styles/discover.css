@@ -136,13 +136,7 @@ main{
 .attraction-head{
     text-align: center;
 }
-.business-info{
-    display:grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-areas:"image info";
-    gap:3px;
-    padding:5px;
-}
+
 .attraction-image{
     grid-area: image;
     width: 60%;
@@ -294,13 +288,6 @@ main{
     text-align: center;
 }
 
-.attraction-info{
-    display:grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-areas:"image info";
-    gap:3px;
-    padding:5px;
-}
 .attraction-image{
     grid-area: image;
     width: 100%;
