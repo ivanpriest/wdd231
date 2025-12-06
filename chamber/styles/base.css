@@ -1,0 +1,26 @@
+/* Add to your existing base.css */
+.active {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color) !important;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Image optimization */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
