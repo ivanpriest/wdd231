@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ivan Dekportor">
+        <meta name="description" content="Contact Accra Senior High Schools">
+        <title>Contact - Accra High Schools</title>
+        <meta property="og:title" content="Contact Accra Senior High Schools">
+        <meta property="og:description" content="Get in touch with Accra Senior High Schools">
+        <meta property="og:image" content="./images/regional-office.webp">
+        <meta property="og:url" content="https://tesanocommercechamber.com/contact">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/home.css"> <!-- Keep home.css for header/footer -->
+        <link rel="stylesheet" href="./styles/contact.css"> <!-- New contact.css -->
+        <script src="./scripts/contact.js" defer></script> <!-- New contact.js -->
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="company">
+                <div class="logo"><img src="./images/regional-office.webp" alt="company logo"></div>
+                <div class="name"><p>Accra Senior High Schools</p></div>
+            </div>
+            <nav>
+                <div class="ham">
+                    <div class="nav-container">
+                        <ul class="nav hide">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="directory.html">Directory</a></li>
+                            <li><a href="#" class="active">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- NO hero image - matches directory page design -->
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h1>Contact Us</h1>
+                    <p class="contact-intro">
+                        Have questions about Accra Senior High Schools? Need to add or update school information? 
+                        Fill out the form below and our team will get back to you promptly.
+                    </p>
+                </div>
+                
+                <!-- Contact information -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>📍 Our Location</h3>
+                        <p>Ministry of Education, Accra</p>
+                        <p>Greater Accra Region, Ghana</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📞 Contact Info</h3>
+                        <p><strong>Phone:</strong> (+233) 542-432-674</p>
+                        <p><strong>Email:</strong> education@accraschools.gov.gh</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>⏰ Office Hours</h3>
+                        <p><strong>Mon-Fri:</strong> 8:00 AM - 5:00 PM</p>
+                        <p><strong>Saturday:</strong> 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+                
+                <!-- Form section -->
+                <div class="form-section">
+                    <h2>Submit School Information</h2>
+                    <div id="success-message" class="success-message">
+                        Thank you! Your information has been submitted successfully.
+                    </div>
+                    
+                    <form id="contact-form" action="thanks.html" method="GET">
+                        <label for="firstname">
+                            <p>First Name<span>*</span>:</p>
+                            <input type="text" name="firstname" id="firstname" 
+                                   title="Enter your first name" 
+                                   autocomplete="given-name" 
+                                   placeholder="Enter your first name here" 
+                                   required>
+                        </label>
+                        
+                        <label for="lastname">
+                            <p>Last Name<span>*</span>:</p>
+                            <input type="text" name="lastname" id="lastname" 
+                                   title="Enter your last name" 
+                                   autocomplete="family-name" 
+                                   placeholder="Enter your last name here" 
+                                   required>
+                        </label>
+                        
+                        <label for="schoolname">
+                            <p>School Name<span>*</span>:</p>
+                            <input type="text" name="schoolname" id="schoolname" 
+                                   title="Enter your school's name" 
+                                   placeholder="Enter the school's name" 
+                                   required>
+                        </label>
+                        
+                        <label for="location">
+                            <p>Location<span>*</span>:</p>
+                            <input type="text" name="location" id="location" 
+                                   placeholder="Enter the location of the school" 
+                                   required>
+                        </label>
+                        
+                        <label for="email">
+                            <p>Email Address:</p>
+                            <input type="email" name="email" id="email" 
+                                   title="Enter your email address" 
+                                   autocomplete="email" 
+                                   placeholder="Enter your email address">
+                        </label>
+                        
+                        <label for="message">
+                            <p>Additional Information:</p>
+                            <textarea name="message" id="message" 
+                                      rows="4" 
+                                      placeholder="Any additional information about the school..."></textarea>
+                        </label>
+                        
+                        <input type="hidden" id="time-submitted" name="time-submitted">
+                        
+                        <button type="submit">Submit School Information</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="company-info">
+                <h5>Accra Senior High Schools</h5>
+                <p>Ministry of Education</p>
+                <p>(+233) 542-432-674</p>
+            </section>
+            <section class="socials">
+                <div class="social"><a href="#"><img src="./images/github.svg" alt="GitHub link"></a></div>
+                <div class="social"><a href="#"><img src="./images/linkedin-brands-solid-full.svg" alt="LinkedIn link"></a></div>
+                <div class="social"><a href="#"><img src="./images/indeed.svg" alt="Indeed link"></a></div>
+            </section>
+            <section class="project-info">
+                <p>WDD231 Final Project</p>
+                <p>Ivan Dekportor</p>
+                <p id="copyright"></p>
+                <p id="last-modified"></p>
+            </section>
+        </footer>
+    </body>
+</html>

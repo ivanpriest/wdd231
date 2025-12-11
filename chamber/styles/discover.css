@@ -287,7 +287,6 @@ main{
 .attraction-head h2{
     text-align: center;
 }
-
 .attraction-image{
     grid-area: image;
     width: 100%;

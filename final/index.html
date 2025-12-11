@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ivan Dekportor">
+        <meta name="description" content="Senior high schools in accra,ghana. teacher in accra,students in accra, ghana.">
+        <title>Accra High Schools Home</title>
+        <meta property="og:title" content="Ghana senior high schools">
+        <meta property="og:description" content="commerce in tesano,accra,ghana. chamber of commerce for businesses, enterprenuers,cutomers,investors in tesano,accra, ghana.">
+        <meta property="og:image" content="./images/regional-office.webp">
+        <meta property="og:url" content="https://tesanocommercechamber.com">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/home.css">
+        <!-- FIX: Change rel="module" to type="module" and .mjs to .js -->
+        <script type="module" src="./scripts/home.js" defer></script>
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="company">
+                <div class="logo"><img src="./images/regional-office.webp" alt="company logo"></div>
+                <div class="name"><p>Accra senior high school</p></div>
+            </div>
+            <nav>
+                <div class="ham">
+                    <div  class="nav-container">
+                        <ul class="nav hide">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="directory.html">Directory</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero-image">
+                <div id="call-to-action">
+                <a href="./directory.html">Explore Accra shs</a>
+            </div>
+            </section>
+            <h1>Home</h1>
+            <section class="shs-intros">
+                <p>
+                    Welcome to the Accra Senior High Schools Hub. 
+                    Accra is home to some of Ghana's most respected and diverse Senior High Schools—institutions that shape future leaders, innovators, and professionals. 
+                    Our goal is to help students and families explore these schools with ease. Here you'll find key information such as school locations, categories, histories, and logos, all organized into a simple and useful directory.
+                    Whether you're preparing for SHS placement, researching options, or learning more about education in Accra, this website provides a friendly starting point.
+                </p>
+            </section>
+             <section class="views">
+                <div class="grid"><p>Grid</p></div>
+                <div class="list"><p>List</p></div>
+            </section>
+            <section class="featured-schools cards">
+                <!-- Schools will be loaded here by JavaScript -->
+            </section>
+        </main>
+        <footer>
+            <section class="company-info">
+                <h5>Accra senior high schools</h5>
+                <p>Ministry of education</p>
+                <p>(+233) 542-432-674</p>
+            </section>
+            <section class="socials">
+                <div class="social"><a href="#"><img src="./images/github.svg" alt="gihublink"></a></div>
+                <div class="social"><a href="#"><img src="./images/linkedin-brands-solid-full.svg" alt="linkedIn link"></a></div>
+                <div class="social"><a href="#"><img src="./images/indeed.svg" alt="indeed link"></a></div>
+            </section>
+            <section class="project-info">
+                <p>WDD231 final Project</p>
+                <p>Ivan Dekportor</p>
+                <!-- FIX: Make sure these IDs match JavaScript -->
+                <p id="copyright"></p>
+                <p id="last-modified"></p>
+            </section>
+        </footer>
+
+        <!-- Modal for school details -->
+        <dialog class="modal">
+            <!-- Content will be added by JavaScript -->
+        </dialog>
+    </body>
+</html>

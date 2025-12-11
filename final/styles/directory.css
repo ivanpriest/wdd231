@@ -1,0 +1,190 @@
+/* directory.css - Additional styles for directory page */
+
+/* Hero section for directory */
+.directory-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../images/directory-hero.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.directory-hero .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.directory-hero .hero-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Directory controls */
+.directory-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-btn.active {
+    background: #2c3e50;
+    color: white;
+    border-color: #2c3e50;
+}
+
+.search-filter {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#search-input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+#location-filter {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+}
+
+/* Schools container */
+.schools-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.schools-container.list-view {
+    grid-template-columns: 1fr;
+}
+
+/* School card - following your existing card pattern */
+.school-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.school-card:hover {
+    transform: translateY(-5px);
+}
+
+.school-card .card-header {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.school-card .card-header h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.school-card .card-body {
+    padding: 1rem;
+}
+
+.school-card .card-body p {
+    margin: 0.5rem 0;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.school-card .card-body .school-type {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #e3f2fd;
+    color: #1976d2;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+/* List view specific styles */
+.school-card.list-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.school-card.list-view .card-header {
+    flex: 1;
+    border-bottom: none;
+    border-right: 1px solid #eee;
+}
+
+.school-card.list-view .card-body {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Loading state */
+.loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .directory-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-filter {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    #search-input {
+        flex-grow: 1;
+    }
+    
+    .schools-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .school-card.list-view {
+        flex-direction: column;
+    }
+    
+    .school-card.list-view .card-body {
+        grid-template-columns: 1fr;
+    }
+}

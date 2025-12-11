@@ -1,0 +1,146 @@
+ [
+  {
+    "id": 1,
+    "name": "Achimota School",
+    "location": "Achimota, Accra",
+    "history": "Founded in 1924, one of Ghana’s oldest co-ed senior high schools, known for academic excellence and a long list of prominent alumni.",
+    "logo": "./images/achimota-shs-logo.jpg",
+    "category": "A"
+  },
+  {
+    "id": 2,
+    "name": "Accra Academy",
+    "location": "Kaneshie, Accra",
+    "history": "Established in 1931; a leading boys’ high school with strong academics and discipline.",
+    "logo": "./images/Accra-Academy.png",
+    "category": "A"
+  },
+  {
+    "id": 3,
+    "name": "Accra High School",
+    "location": "North Ridge, Accra",
+    "history": "Founded in 1923; among the oldest public senior high schools in Accra.",
+    "logo": "./images/Accra-High.png",
+    "category": "B"
+  },
+  {
+    "id": 4,
+    "name": "St. Thomas Aquinas SHS",
+    "location": "Cantonments, Accra",
+    "history": "Catholic boys’ school established in 1952.",
+    "logo": "./images/saint-thomas-aquinas-senior-high-school.jpg",
+    "category": "A"
+  },
+  {
+    "id": 5,
+    "name": "Presbyterian Boys' Secondary School (PRESEC)",
+    "location": "Legon, Accra",
+    "history": "Founded in 1938; well-known for excellence in sciences and national academic competitions.",
+    "logo": "./images/Presby-Boys.png",
+    "category": "A"
+  },
+  {
+    "id": 6,
+    "name": "Wesley Girls High School (Accra)",
+    "location": "Mamprobi, Accra",
+    "history": "Girls’ school under Methodist church tradition.",
+    "logo": "./images/Wesley-capecoast.jpeg",
+    "category": "A"
+  },
+  {
+    "id": 7,
+    "name": "Holy Trinity Cathedral SHS",
+    "location": "High Street, Accra",
+    "history": "Anglican-affiliated secondary school established in 1965.",
+    "logo": "./images/holy-trinity-senior-high.png",
+    "category": "B"
+  },
+  {
+    "id": 8,
+    "name": "Odorgonno Senior High School",
+    "location": "Awoshie, Accra",
+    "history": "Day school established in 1940, serving inner-city students.",
+    "logo": "./images/odorgono-shs.webp",
+    "category": "B"
+  },
+  {
+    "id": 9,
+    "name": "Kaneshie Senior High Technical School",
+    "location": "Kaneshie, Accra",
+    "history": "Technical-focused public secondary school in Accra.",
+    "logo": "./images/Kaneshie-tech.png",
+    "category": "B"
+  },
+  {
+    "id": 10,
+    "name": "Accra Girls Senior High School",
+    "location": "Mamobi, Accra",
+    "history": "Public girls’ school founded in 1960.",
+    "logo": "./images/Accra-girls.png",
+    "category": "B"
+  },
+  {
+    "id": 11,
+    "name": "Labone Senior High School",
+    "location": "Labone, Accra",
+    "history": "Founded in 1949; known for arts and academic programs.",
+    "logo": "./images/labone.webp",
+    "category": "B"
+  },
+  {
+    "id": 12,
+    "name": "Tema Senior High School (TESS)",
+    "location": "Tema (Greater Accra Region)",
+    "history": "Established 1961; serves Tema–Accra metro area students.",
+    "logo": "./images/tema-tess.png",
+    "category": "A"
+  },
+  {
+    "id": 13,
+    "name": "St. Margaret Mary SHS",
+    "location": "Dansoman, Accra",
+    "history": "Catholic girls’ secondary school.",
+    "logo": "./images/st-margaret-mary-senior-high-technical.png",
+    "category": "B"
+  },
+  {
+    "id": 14,
+    "name": "Nungua Senior High School",
+    "location": "Nungua, Accra",
+    "history": "Founded 1960; offers general and vocational programs.",
+    "logo": "./images/nugua-shs.webp",
+    "category": "B"
+  },
+  {
+    "id": 15,
+    "name": "St. John's Grammar Senior High School",
+    "location": "Achimota, Accra",
+    "history": "Catholic-founded public secondary school from 1954.",
+    "logo": "./images/saint-johns.png",
+    "category": "A"
+  },
+  {
+    "id": 16,
+    "name": "Presbyterian Senior High School, Osu (Osu PRESEC)",
+    "location": "Osu, Accra",
+    "history": "Day school managed by Presbyterian Church in Osu.",
+    "logo": "./images/Osu-Presby.png",
+    "category": "B"
+  },
+  {
+    "id": 17,
+    "name": "Forces Senior High Technical School",
+    "location": "Burma Camp, Accra",
+    "history": "Security-services–affiliated technical school.",
+    "logo": "./images/forces.webp",
+    "category": "B"
+  },
+  {
+    "id": 18,
+    "name": "Accra Wesley Girls High School",
+    "location": "Accra",
+    "history": "Methodist girls’ school focusing on academics and discipline.",
+    "logo": "./images/wesley-girls.jpg",
+    "category": "A"
+  }
+]
