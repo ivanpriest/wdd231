@@ -1,15 +1,15 @@
 // ----------------------------------
 // SAFE-SELECT Helper Function
 // ----------------------------------
-function $(selector) {
+function qs(selector) {
     return document.querySelector(selector);
 }
 
 // ----------------------------------
 // MOBILE NAV
 // ----------------------------------
-const ham = $(".ham");
-const nav = $(".nav");
+const ham = qs(".ham");
+const nav = qs(".nav");
 
 if (ham) {
     ham.addEventListener("click", () => {
@@ -21,12 +21,12 @@ if (ham) {
 // ----------------------------------
 // FOOTER INFO
 // ----------------------------------
-const lastModified = $("#last-modified");
+const lastModified = qs("#last-modified");
 if (lastModified) {
     lastModified.textContent = `Last Modified: ${new Date().toLocaleString()}`;
 }
 
-const copyright = $("#copyright");
+const copyright = qs("#copyright");
 if (copyright) {
     copyright.innerHTML = `&copy; ${new Date().getFullYear()} Tesano Chamber Of Commerce`;
 }
@@ -34,7 +34,7 @@ if (copyright) {
 // ----------------------------------
 // DIRECTORY PAGE ONLY
 // ----------------------------------
-const businessContainer = $("#business-container");
+const businessContainer = qs("#business-container");
 
 if (businessContainer) {
     // Only run business loading on directory.html
@@ -77,8 +77,8 @@ if (businessContainer) {
 // ----------------------------------
 // GRID / LIST BUTTONS (directory only)
 // ----------------------------------
-const grid = $(".grid");
-const list = $(".list");
+const grid = qs(".grid");
+const list = qs(".list");
 
 if (grid && list && businessContainer) {
     grid.addEventListener("click", async () => {
@@ -98,8 +98,8 @@ if (grid && list && businessContainer) {
 // WEATHER FUNCTIONS (home only)
 // ----------------------------------
 async function loadCurrentWeather() {
-    const weatherIcon = $(".weather-icon");
-    const weatherdetails = $(".weather-details");
+    const weatherIcon = qs(".weather-icon");
+    const weatherdetails = qs(".weather-details");
 
     if (!weatherIcon || !weatherdetails) return; // <- IMPORTANT FIX
 
@@ -127,7 +127,7 @@ async function loadCurrentWeather() {
 }
 
 async function loadForecast() {
-    const forecastContainer = $(".forecast");
+    const forecastContainer = qs(".forecast");
     if (!forecastContainer) return;
 
     const lat = "5.577693814474199";
@@ -168,7 +168,7 @@ async function loadForecast() {
 // SPOTLIGHT MEMBERS (home only)
 // ----------------------------------
 async function loadSpotlights() {
-    const section = $("#busi");
+    const section = qs("#busi");
     if (!section) return;
 
     try {
