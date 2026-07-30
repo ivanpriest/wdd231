@@ -31,7 +31,7 @@ a{
     text-decoration: none;
 }
 .hero-image{
-    background-image: url(/chamber/images/chamber-commerce-text-written-torn-paper-163992289.webp);
+    background-image: url(./chamber/images/chamber-commerce-text-written-torn-paper-163992289.webp);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -151,12 +151,12 @@ main{
 }
 .weather{
     display:grid;
-    grid-template-columns:repeat(2,minmax(1fr,2fr));
-    grid-template-areas: "icon details";
+    grid-template-columns:repeat(2,minmax(250px,1fr));
+    grid-template-areas: "icons details";
 }
 .weather-icon{
 
-    grid-area: icon;
+    grid-area: icons;
 }
 .weather-details{
 
@@ -251,7 +251,7 @@ main{
 }
 .business-info{
     display:grid;
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-areas:"image info";
     gap:3px;
     padding:5px;
@@ -419,8 +419,8 @@ main{
 }
 .weather{
     display:grid;
-    grid-template-columns:repeat(2,minmax(1fr,2fr));
-    grid-template-areas: "icons details";
+    grid-template-columns:repeat(2,minmax(25px,2fr));
+    grid-template-areas: "icons info";
 }
 .weather-icon{
     grid-area: icons;
@@ -429,7 +429,7 @@ main{
 
 }
 .weather-details{
-    grid-area: details;
+    grid-area: info;
 
 }
 
@@ -518,8 +518,8 @@ main{
 }
 .business-info{
     display:grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-areas:"image info";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "image info";
     gap:3px;
     padding:5px;
 }
