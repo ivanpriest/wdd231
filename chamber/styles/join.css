@@ -128,10 +128,9 @@ margin:3em auto;
 label{
     display:block;
     margin-top: 2em;
-}
-label p{
     font-weight: bold;
 }
+
 #form button{
     width:60%;
     height: 35px;
