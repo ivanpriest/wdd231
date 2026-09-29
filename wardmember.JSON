@@ -1,0 +1,17 @@
+{
+    "family_name": "Santos",
+    "family_number": 4,
+    "visited_by_bishop":true,
+    "members":[
+        {"name":"Ivan",
+          "age":"26",
+          "sex":"Male"},
+        {"name":"Famous",
+          "age":"23",
+          "sex":"male"},
+        {"name": "Mina",
+         "age": "24",
+        "sex": "female"}
+    ]
+
+}

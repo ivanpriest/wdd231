@@ -13,10 +13,47 @@
         <meta name="twitter:card" content="">
         <meta name="twitter:url" content="">
         <meta name="twitter:description" content="">
+        <link rel="stylesheet" href="trial.css">
+        
     </head>
     <body>
         <header></header>
-        <main></main>
+        <main>
+            <h1></h1>
+            <button id="start">Start</button>
+            <button id="modal-open">open</button>
+            <dialog id="modal">
+                <h1>Modal</h1>
+                <p>this is a modal example</p>
+                <button id="modal-close">close</button>
+            </dialog>
+        </main>
         <footer></footer>
+        <script>
+            const startButton = window.document.querySelector("#start");
+
+
+            startButton.addEventListener('click', () => {
+                var startTime = 10000;
+                const inter = window.setInterval(() => {
+                    window.document.querySelector("h1").innerText = `${startTime/ 1000 } second(s)`;
+                    startTime = startTime - 1000;
+                }, 1000);
+                const timeOut = window.setTimeout(() => { window.clearInterval(inter);
+                    window.document.querySelector("h1").innerText = 'Started';
+                 }, startTime +1000);
+
+            })
+            const modal=window.document.querySelector("#modal");
+            const openButton=window.document.querySelector("#modal-open");
+            const modalClose= window.document.querySelector("#modal-close");
+            openButton.addEventListener('click', () =>{
+                modal.showModal();
+            });
+            modalClose.addEventListener('click', () => {
+                modal.close();
+            });
+
+        </script>
     </body>
 </html>
